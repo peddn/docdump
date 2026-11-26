@@ -88,4 +88,16 @@ docdump ist ein selbst gehosteter Dokumentations-Server. Die Weboberfläche spie
 
 ## Befehle
 
-Werden in Meilenstein M0 angelegt. Danach hier eintragen (Bauen, Testen, Entwicklungsserver starten, Lint).
+### Frontend
+
+Im Ordner `frontend/` (Node.js 22.18 oder neuer):
+
+```bash
+npm ci                    # Abhängigkeiten nach package-lock.json installieren
+npm run dev               # Entwicklungsserver; /api und /raw gehen an BACKEND_URL (Standard http://127.0.0.1:8080)
+npm run lint              # ESLint (npm run lint:fix behebt)
+npm run type-check        # Typprüfung mit vue-tsc
+npm test                  # Vitest, einmalig (npm run test:watch beobachtet)
+npm run format:check      # Formatierung prüfen (npm run format behebt)
+npm run build             # Typprüfung und Produktions-Build nach dist/
+```
