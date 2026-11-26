@@ -13,6 +13,7 @@ Verbindliche Fachbegriffe des Projekts.
 |---|---|---|
 | Workspace | `workspace` | Ein Wurzelordner mit Dokumentation, z. B. „Beruf“ oder „Hobby“. Der Server bedient einen oder mehrere. |
 | Workspace-ID | `workspace_id`, in URLs `ws` | Kurzname eines Workspace aus der Serverkonfiguration. Teil aller API-Pfade und Routen. |
+| Workspace-Wurzel | `root` | Ordner eines Workspace im Dateisystem, in der Serverkonfiguration als `path` angegeben. Bezugspunkt für Workspace-Pfade und Wurzelpfade. |
 | Eintrag | `entry` | Eine Datei oder ein Ordner im Workspace. |
 | Art des Eintrags | `kind` | `page`, `dir` oder `file`. |
 | Seite | `page` | Eine `.md`-Datei. |

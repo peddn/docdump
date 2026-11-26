@@ -1,0 +1,11 @@
+# Serverkonfiguration für die Entwicklung (Konzept 5.6).
+#
+# Start im Ordner backend/:
+#   cargo run -- --config ../examples/docdump.toml
+
+listen = "127.0.0.1:8080"
+
+[[workspace]]
+id = "beispiel"
+name = "Beispiel"
+path = "workspace"   # relativ zu dieser Datei
