@@ -1,0 +1,13 @@
+# Workspace-Konfiguration des Beispiel-Workspace (Konzept 5.6).
+
+# Bildverzeichnis. Wird in Bildeinbindungen nie angegeben: ![Plan](/netzwerk.png)
+image_dir = "img"
+
+# Immer ausgeblendet, auch mit ls -A.
+ignore = ["entwurf-*", "archiv/"]
+
+# Standard für den Dateibrowser (Konzept 5.4).
+ls = "-v --group-directories-first"
+
+# Standard für den Bilder-Browser (Konzept 10.4): neueste Bilder zuerst.
+ls_images = "-t"
