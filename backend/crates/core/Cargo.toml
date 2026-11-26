@@ -1,0 +1,11 @@
+[package]
+name = "docdump-core"
+description = "Fachlogik von docdump, ohne HTTP"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+
+[lints]
+workspace = true

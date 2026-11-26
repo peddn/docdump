@@ -276,7 +276,7 @@ Weitere Regeln:
 
 ### 7.3 Backend
 
-Cargo-Workspace mit zwei Crates:
+Cargo-Workspace mit zwei Crates. Die Ordner heißen `crates/core` und `crates/server`, die Pakete `docdump-core` und `docdump-server`: Ein Paket namens `core` würde die eingebaute Bibliothek `core` von Rust überdecken. Die Programmdatei heißt `docdump`.
 
 | Crate | Aufgabe |
 |---|---|
