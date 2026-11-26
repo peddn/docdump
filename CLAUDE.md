@@ -88,4 +88,14 @@ docdump ist ein selbst gehosteter Dokumentations-Server. Die Weboberfläche spie
 
 ## Befehle
 
-Werden in Meilenstein M0 angelegt. Danach hier eintragen (Bauen, Testen, Entwicklungsserver starten, Lint).
+### Backend
+
+Im Ordner `backend/`:
+
+```bash
+cargo build                                   # bauen
+cargo test                                    # alle Tests
+cargo fmt --check                             # Formatierung prüfen (cargo fmt behebt)
+cargo clippy --all-targets -- -D warnings     # Lint
+cargo run                                     # Programmdatei docdump starten
+```
