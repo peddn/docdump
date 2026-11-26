@@ -1,0 +1,2 @@
+Eine Datei, die keine Seite ist (Art "file").
+Wie solche Dateien angezeigt werden, ist noch offen (Konzept, E3).
