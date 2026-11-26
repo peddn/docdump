@@ -93,9 +93,9 @@ docdump ist ein selbst gehosteter Dokumentations-Server. Die Weboberfläche spie
 Im Ordner `backend/`:
 
 ```bash
-cargo build                                   # bauen
-cargo test                                    # alle Tests
-cargo fmt --check                             # Formatierung prüfen (cargo fmt behebt)
-cargo clippy --all-targets -- -D warnings     # Lint
-cargo run                                     # Programmdatei docdump starten
+cargo build                                      # bauen
+cargo test                                       # alle Tests
+cargo fmt --check                                # Formatierung prüfen (cargo fmt behebt)
+cargo clippy --all-targets -- -D warnings        # Lint
+cargo run -- --config ../examples/docdump.toml   # Server mit dem Beispiel-Workspace starten
 ```

@@ -179,6 +179,15 @@ path = "/srv/doku/hobby"
 poll = false        # true für Netzlaufwerke, siehe 7.4
 ```
 
+Regeln für die Serverkonfiguration:
+
+- Ohne `--config` liest der Server `docdump.toml` im aktuellen Ordner.
+- `listen` ist optional, Standard `127.0.0.1:8080`.
+- Mindestens ein Workspace. `poll` ist optional, Standard `false`.
+- `id` besteht aus `a–z`, `0–9`, `-` und `_` und beginnt mit Buchstabe oder Ziffer, damit sie ohne Kodierung in URLs stehen kann. Jede `id` kommt nur einmal vor.
+- `path` muss ein vorhandener Ordner sein. Relative Pfade gelten relativ zum Ordner der Konfigurationsdatei. Der Server arbeitet mit dem aufgelösten Pfad (Symlinks aufgelöst).
+- Unbekannte Schlüssel sind ein Fehler, damit Tippfehler auffallen. Bei jedem Fehler startet der Server nicht und nennt den Grund.
+
 **Workspace-Konfiguration** (`.docdump.toml` in der Workspace-Wurzel, optional):
 
 ```toml
